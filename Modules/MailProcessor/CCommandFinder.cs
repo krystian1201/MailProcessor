@@ -1,7 +1,10 @@
-﻿using System.Collections.Generic;
-using MailProcessor.Lib;
+﻿
+using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+
+using MailProcessor.Lib;
 
 
 namespace MailProcessor
@@ -20,6 +23,11 @@ namespace MailProcessor
 
         public ICommand GetCommand(string strMessageId)
         {
+            if (String.IsNullOrEmpty(strMessageId))
+            {
+                throw new ArgumentException("No message ID was passed to method");
+            }
+
             _message = _messageSource.Find(strMessageId);
 
             if (_message.Subject.StartsWith("[DELETEME]"))
@@ -41,6 +49,8 @@ namespace MailProcessor
         {
             CultureInfo cultureInfo = CultureInfo.CreateSpecificCulture("en-US");
             List<string> spamWords = new List<string>(){"buy", "cheap"};
+
+            
 
             if (spamWords.Any(spamWord =>
                         cultureInfo.CompareInfo.IndexOf(_message.Subject, spamWord, CompareOptions.IgnoreCase) >= 0 ||

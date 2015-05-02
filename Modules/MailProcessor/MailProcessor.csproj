@@ -47,6 +47,8 @@
   <ItemGroup>
     <Compile Include="CCommandFinder.cs" />
     <Compile Include="CCommandExecutor.cs" />
+    <Compile Include="CMessage.cs" />
+    <Compile Include="CMessageSource.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

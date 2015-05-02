@@ -52,9 +52,7 @@
     <Compile Include="ICommandExecutor.cs" />
     <Compile Include="ICommand.cs" />
     <Compile Include="IMessage.cs" />
-    <Compile Include="CMessageSource.cs" />
     <Compile Include="IMessageSource.cs" />
-    <Compile Include="CMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
