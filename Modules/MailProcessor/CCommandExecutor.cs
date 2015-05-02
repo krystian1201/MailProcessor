@@ -1,7 +1,7 @@
 ﻿
-using MailProcessor.Lib;
 using System;
 
+using MailProcessor.Lib;
 
 namespace MailProcessor
 {

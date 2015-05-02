@@ -1,10 +1,11 @@
 ﻿
 using System;
-
 using Microsoft.Exchange.WebServices.Data;
 
+using MailProcessor.Lib;
 
-namespace MailProcessor.Lib
+
+namespace MailProcessor
 {
 
     class CMessage : IMessage

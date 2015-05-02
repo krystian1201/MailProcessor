@@ -1,6 +1,7 @@
 ﻿
-using MailProcessor.Lib;
 using System.Collections.Generic;
+
+using MailProcessor.Lib;
 
 
 namespace Tests.MailProcessor.UnitTests

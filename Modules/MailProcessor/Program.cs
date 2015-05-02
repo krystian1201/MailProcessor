@@ -1,7 +1,6 @@
 ﻿
 
 using MailProcessor.Lib;
-using MailProcessor.Lib.Exchange;
 using Microsoft.Exchange.WebServices.Data;
 
 

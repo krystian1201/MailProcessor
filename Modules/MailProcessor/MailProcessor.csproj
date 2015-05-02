@@ -49,6 +49,7 @@
     <Compile Include="CCommandExecutor.cs" />
     <Compile Include="CMessage.cs" />
     <Compile Include="CMessageSource.cs" />
+    <Compile Include="ExchangeConnector.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

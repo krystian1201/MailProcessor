@@ -1,11 +1,11 @@
 ﻿
 using System.Collections.Generic;
 using System.Linq;
-
 using Microsoft.Exchange.WebServices.Data;
 
+using MailProcessor.Lib;
 
-namespace MailProcessor.Lib
+namespace MailProcessor
 {
     /// <summary>
     /// Źródło wiadomości.
